@@ -17,10 +17,10 @@ class BRASICAL_Calculator_Admin {
     public function brasical_menu() {
 
         add_menu_page(
-            esc_html__( 'Bra Size Calculator', 'bra-size-calculator' ),
-            esc_html__( 'Bra Calculator', 'bra-size-calculator' ),
+            esc_html__( 'Bra Size Calculator', 'brasical-bra-size-calculator' ),
+            esc_html__( 'Bra Calculator', 'brasical-bra-size-calculator' ),
             'manage_options',
-            'bra-size-calculator',
+            'brasical-bra-size-calculator',
             [ $this, 'brasical_page' ],
             'dashicons-universal-access',
             58
@@ -55,7 +55,7 @@ class BRASICAL_Calculator_Admin {
      */
     public function brasical_assets( $hook ) {
 
-        if ( $hook !== 'toplevel_page_bra-size-calculator' ) {
+        if ( $hook !== 'toplevel_page-bra-size-calculator' ) {
             return;
         }
 
@@ -84,11 +84,11 @@ class BRASICAL_Calculator_Admin {
         ?>
         <div class="wrap bscp-admin-wrap">
 
-            <h1><?php esc_html_e( 'Bra Size Calculator', 'bra-size-calculator' ); ?></h1>
+            <h1><?php esc_html_e( 'Bra Size Calculator', 'brasical-bra-size-calculator' ); ?></h1>
 
             <!-- Shortcode -->
             <div class="bscp-admin-section">
-                <h2><?php esc_html_e( 'Shortcode', 'bra-size-calculator' ); ?></h2>
+                <h2><?php esc_html_e( 'Shortcode', 'brasical-bra-size-calculator' ); ?></h2>
 
                 <input
                     type="text"
@@ -103,7 +103,7 @@ class BRASICAL_Calculator_Admin {
 
             <!-- Button Color Settings -->
             <div class="bscp-admin-section">
-                <h2><?php esc_html_e( 'Button Color Settings', 'bra-size-calculator' ); ?></h2>
+                <h2><?php esc_html_e( 'Button Color Settings', 'brasical-bra-size-calculator' ); ?></h2>
 
                 <form method="post" action="options.php">
                     <?php settings_fields( 'bscp_bra_calc_settings' ); ?>
@@ -111,7 +111,7 @@ class BRASICAL_Calculator_Admin {
                     <table class="form-table bscp-settings-table">
 
                         <tr>
-                            <th scope="row"><?php esc_html_e( 'Button Background', 'bra-size-calculator' ); ?></th>
+                            <th scope="row"><?php esc_html_e( 'Button Background', 'brasical-bra-size-calculator' ); ?></th>
                             <td>
                                 <input type="text"
                                        name="bscp_btn_bg"
@@ -121,7 +121,7 @@ class BRASICAL_Calculator_Admin {
                         </tr>
 
                         <tr>
-                            <th scope="row"><?php esc_html_e( 'Button Hover Background', 'bra-size-calculator' ); ?></th>
+                            <th scope="row"><?php esc_html_e( 'Button Hover Background', 'brasical-bra-size-calculator' ); ?></th>
                             <td>
                                 <input type="text"
                                        name="bscp_btn_bg_hover"
@@ -131,7 +131,7 @@ class BRASICAL_Calculator_Admin {
                         </tr>
 
                         <tr>
-                            <th scope="row"><?php esc_html_e( 'Button Text Color', 'bra-size-calculator' ); ?></th>
+                            <th scope="row"><?php esc_html_e( 'Button Text Color', 'brasical-bra-size-calculator' ); ?></th>
                             <td>
                                 <input type="text"
                                        name="bscp_btn_text"
@@ -141,7 +141,7 @@ class BRASICAL_Calculator_Admin {
                         </tr>
 
                         <tr>
-                            <th scope="row"><?php esc_html_e( 'Button Text Hover Color', 'bra-size-calculator' ); ?></th>
+                            <th scope="row"><?php esc_html_e( 'Button Text Hover Color', 'brasical-bra-size-calculator' ); ?></th>
                             <td>
                                 <input type="text"
                                        name="bscp_btn_text_hover"

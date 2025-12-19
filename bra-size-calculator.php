@@ -5,10 +5,10 @@
  * Description: Bra size calculator with Bangladesh standard sizing rules.
  * Version: 1.0.0
  * Author: sharifok
- * Author URI: https://github.com/sharifok1
+ * Author URI: https://github.com/sharifok1/bra-size-calculator
  * License: GPLv3
  * License URI: https://www.gnu.org/licenses/gpl-3.0.html
- * Text Domain: bra-size-calculator
+ * Text Domain: brasical-bra-size-calculator
  */
 
 if ( ! defined( 'ABSPATH' ) ) exit;

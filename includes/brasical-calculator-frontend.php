@@ -46,10 +46,10 @@ class BRASICAL_Calculator_Frontend {
         ?>
         <div class="bra-calculator bscp-bra-calculator" id="braCalculator">
 
-            <h2><?php esc_html_e( 'Bra Size Calculator', 'bra-size-calculator' ); ?></h2>
+            <h2><?php esc_html_e( 'Bra Size Calculator', 'brasical-bra-size-calculator' ); ?></h2>
 
             <p class="bra-subtitle bscp-bra-subtitle">
-                <?php esc_html_e( 'Find your perfect bra size with accurate measurements', 'bra-size-calculator' ); ?>
+                <?php esc_html_e( 'Find your perfect bra size with accurate measurements', 'brasical-bra-size-calculator' ); ?>
             </p>
 
             <!-- Unit Toggle -->
@@ -61,25 +61,25 @@ class BRASICAL_Calculator_Frontend {
             <!-- Fields -->
             <div class="bscp-fields">
                 <div class="bscp-field">
-                    <label for="underbust"><?php esc_html_e( 'Underbust', 'bra-size-calculator' ); ?></label>
+                    <label for="underbust"><?php esc_html_e( 'Underbust', 'brasical-bra-size-calculator' ); ?></label>
                     <input
                         type="number"
                         step="0.1"
                         id="underbust"
                         placeholder="34"
                     />
-                    <small><?php esc_html_e( 'Measure underneath your bust with a measurement tape.', 'bra-size-calculator' ); ?></small>
+                    <small><?php esc_html_e( 'Measure underneath your bust with a measurement tape.', 'brasical-bra-size-calculator' ); ?></small>
                 </div>
 
                 <div class="bscp-field">
-                    <label for="overbust"><?php esc_html_e( 'Overbust', 'bra-size-calculator' ); ?></label>
+                    <label for="overbust"><?php esc_html_e( 'Overbust', 'brasical-bra-size-calculator' ); ?></label>
                     <input
                         type="number"
                         step="0.1"
                         id="overbust"
                         placeholder="41"
                     />
-                    <small><?php esc_html_e( 'Take the measurement without wearing a heavy or padded bra.', 'bra-size-calculator' ); ?></small>
+                    <small><?php esc_html_e( 'Take the measurement without wearing a heavy or padded bra.', 'brasical-bra-size-calculator' ); ?></small>
                 </div>
             </div>
 
@@ -89,12 +89,12 @@ class BRASICAL_Calculator_Frontend {
                 id="bscp_calculate"
                 class="bscp-bra-calc-btn"
             >
-                <?php esc_html_e( 'Calculate Size', 'bra-size-calculator' ); ?>
+                <?php esc_html_e( 'Calculate Size', 'brasical-bra-size-calculator' ); ?>
             </button>
 
             <!-- Result -->
             <div class="bscp-result" style="display:none;">
-                <h3><?php esc_html_e( 'Your Perfect Bra Size', 'bra-size-calculator' ); ?></h3>
+                <h3><?php esc_html_e( 'Your Perfect Bra Size', 'brasical-bra-size-calculator' ); ?></h3>
                 <p id="bra-bscp-result"></p>
             </div>
 
@@ -103,13 +103,13 @@ class BRASICAL_Calculator_Frontend {
         <!-- Error Modal -->
         <div id="braErrorModal" class="bra-modal bscp-bra-modal">
             <div class="bra-modal-content bscp-bra-modal-content">
-               <h3>⚠️ <?php esc_html_e( 'Invalid Measurement', 'bra-size-calculator' ); ?></h3>
+               <h3>⚠️ <?php esc_html_e( 'Invalid Measurement', 'brasical-bra-size-calculator' ); ?></h3>
                 <p>
-                    <?php esc_html_e( 'The given measurements are not sufficient to determine an accurate bra size.', 'bra-size-calculator' ); ?><br>
-                    <?php esc_html_e( 'Please take the measurements correctly and try again.', 'bra-size-calculator' ); ?>
+                    <?php esc_html_e( 'The given measurements are not sufficient to determine an accurate bra size.', 'brasical-bra-size-calculator' ); ?><br>
+                    <?php esc_html_e( 'Please take the measurements correctly and try again.', 'brasical-bra-size-calculator' ); ?>
                 </p>
                 <button type="button" onclick="closeBraModal()">
-                    <?php esc_html_e( 'Okay', 'bra-size-calculator' ); ?>
+                    <?php esc_html_e( 'Okay', 'brasical-bra-size-calculator' ); ?>
                 </button>
             </div>
         </div>
