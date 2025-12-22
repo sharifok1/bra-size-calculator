@@ -45,7 +45,7 @@ Ideal for:
 
 Add the following shortcode where you want the calculator to appear:
 
-[bra_size_calculator]
+[brasical_size_calculator]
 
 
 == Frequently Asked Questions ==

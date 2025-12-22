@@ -8,7 +8,7 @@
  * Author URI: https://github.com/sharifok1/bra-size-calculator
  * License: GPLv3
  * License URI: https://www.gnu.org/licenses/gpl-3.0.html
- * Text Domain: brasical-bra-size-calculator
+ * Text Domain: bra-size-calculator
  */
 
 if ( ! defined( 'ABSPATH' ) ) exit;
@@ -19,6 +19,7 @@ define( 'BRASICAL_CALC_URL', plugin_dir_url( __FILE__ ) );
 // Frontend shortcode + assets
 require_once BRASICAL_CALC_PATH . 'includes/brasical-calculator-frontend.php';
 // Admin dashboard
-if ( is_admin() ) {
-    require_once BRASICAL_CALC_PATH . 'includes/brasical-calculator-admin.php';
-}
+// if ( is_admin() ) {
+//     require_once BRASICAL_CALC_PATH . 'includes/brasical-calculator-admin.php';
+// }
+require_once BRASICAL_CALC_PATH . 'includes/brasical-calculator-admin.php';
